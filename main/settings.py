@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-8r)llp=vg+6r4#!k5jt!9e!)zblu$7n2+zlth3ovm#p5ytm^1-
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost',"rohitoodles.pythonanywhere.com"]
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost',"RohitMaurya15.pythonanywhere.com"]
 
 
 AUTH_USER_MODEL='blog.User'
