@@ -137,16 +137,16 @@ WSGI_APPLICATION = 'main.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',  
-        'NAME': 'ROHIT',          
-        'USER': 'root',             
-        'PASSWORD': 'rohit',     
-        'HOST': 'localhost',                   
-        'PORT': '3306',                        # Default MySQL port
-    }
-}
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',  
+#         'NAME': 'ROHIT',          
+#         'USER': 'root',             
+#         'PASSWORD': 'rohit',     
+#         'HOST': 'localhost',                   
+#         'PORT': '3306',                        # Default MySQL port
+#     }
+# }
 
 
 
@@ -207,6 +207,6 @@ environ.Env.read_env()
 import dj_database_url
 DATABASES = {
     'default': dj_database_url.config(
-        default=os.getenv('DATABASE_URL', 'mysql://root:rohit@localhost:3306/ROHIT')
+        default=os.getenv('DATABASE_URL', 'mysql://RohitMaurya15:Rohit12345@@RohitMaurya15.mysql.pythonanywhere-services.com:3306/RohitMaurya15$default')
     )
 }
