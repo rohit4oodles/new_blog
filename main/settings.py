@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-8r)llp=vg+6r4#!k5jt!9e!)zblu$7n2+zlth3ovm#p5ytm^1-
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost',"RohitMaurya15.pythonanywhere.com"]
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost',"RohitMaurya14.pythonanywhere.com","103.206.101.254"]
 
 
 AUTH_USER_MODEL='blog.User'
@@ -62,7 +62,7 @@ INSTALLED_APPS = [
 
 ]
 CORS_ALLOWED_ORIGINS = [
-    'http://localhost:3000',]
+    'http://localhost:3000',"http://103.206.101.254:5017"]
 
 CORS_ALLOW_METHODS = [
     'GET',
@@ -88,7 +88,7 @@ REST_FRAMEWORK = {
 CORS_ALLOW_HEADERS = [
     'content-type',
     'authorization',  
-    'accept',
+    'accep',
 ]
 MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
@@ -137,16 +137,16 @@ WSGI_APPLICATION = 'main.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.mysql',  
-#         'NAME': 'ROHIT',          
-#         'USER': 'root',             
-#         'PASSWORD': 'rohit',     
-#         'HOST': 'localhost',                   
-#         'PORT': '3306',                        # Default MySQL port
-#     }
-# }
+DATABASES = {
+     'default': {
+         'ENGINE': 'django.db.backends.mysql',  
+         'NAME': 'mydb',          
+         'USER': 'root',             
+         'PASSWORD': 'rootpassword',     
+         'HOST': 'db',                   
+         'PORT': '3306',                        # Default MySQL port
+     }
+ }
 
 
 
@@ -197,16 +197,16 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT =  os.path.join(BASE_DIR,'media')
 
 SITE_ID = 1
-LOCAL_HOST="http://127.0.0.1:8000/"
+LOCAL_HOST="http://103.206.101.254:8017/"
 
 
-import environ
+#import environ
 
-env = environ.Env()
-environ.Env.read_env()
-import dj_database_url
-DATABASES = {
-    'default': dj_database_url.config(
-        default=os.getenv('DATABASE_URL', 'mysql://RohitMaurya15:Rohit12345@@RohitMaurya15.mysql.pythonanywhere-services.com:3306/RohitMaurya15$default')
-    )
-}
+#env =w;fgefhbeuyfex environ.Env()
+#environ.Env.read_env()
+#import dj_database_url
+#DATABASES = {
+ #   'default': dj_database_url.config(
+  #      default=os.getenv('DATABASE_URL', 'mysql://RohitMaurya15:Rohit12345@@RohitMaurya15.mysql.pythonanywhere-services.com:3306/RohitMaurya15$default')
+   # )
+#}soi
